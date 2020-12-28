@@ -1,5 +1,6 @@
 pipeline {   
-    agent any   environment {       
+    agent any   
+    environment {       
         registry = "itsdenty/k8scicd"       
         GOCACHE = "/tmp"   
     }   
