@@ -47,9 +47,9 @@ pipeline {
             }       
         }       
         stage ('Deploy') {   
-            environment {               
-                BECOME_PASSWORD = credentials('sudopass')
-            }          
+            // environment {               
+            //     BECOME_PASSWORD = credentials('sudopass')
+            // }          
             steps {               
                 script{                   
                     def image_id = registry + ":$BUILD_NUMBER"                   
