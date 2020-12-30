@@ -29,7 +29,7 @@ pipeline {
                 sh 'mkdir -p ${GOPATH}/src/hello-world'  // Copy all files in our Jenkins workspace to our project directory.                              
                 sh 'cp -r ${WORKSPACE}/* ${GOPATH}/src/hello-world' // Remove cached test results.               
                 sh 'go clean -cache'               // Run Unit Tests.               
-                sh 'go test ./... -v -short'                      
+                sh 'go test ./*_test.go -v -short'                     
             }       
         }       
         stage('Publish') {           
