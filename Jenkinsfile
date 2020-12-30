@@ -48,12 +48,12 @@ pipeline {
         }       
         stage ('Deploy') {   
             environment {               
-                become_password = credentials('sudopass')
+                BECOME_PASSWORD = credentials('sudopass')
             }          
             steps {               
                 script{                   
                     def image_id = registry + ":$BUILD_NUMBER"                   
-                    sh "/home/coding-muse/.local/bin/ansible-playbook -b playbook.yml --extra-vars \"image_id=${image_id} ansible_become_pass=${$become_password}\""            
+                    sh "/home/coding-muse/.local/bin/ansible-playbook -b playbook.yml --extra-vars \"image_id=${image_id} ansible_become_pass=${$BECOME_PASSWORD}\""            
                 }           
             }       
         }   
