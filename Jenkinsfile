@@ -53,7 +53,7 @@ pipeline {
             steps {               
                 script{                   
                     def image_id = registry + ":$BUILD_NUMBER"                   
-                    sh "ansible-playbook playbook.yml --extra-vars \"image_id=${image_id} ansible_become_pass=4d3d4m0l4 ansible_become_user=coding-muse\""            
+                    sh "ansible-playbook playbook.yml --extra-vars \"image_id=${image_id} ansible_become_pass=4d3d4m0l4\""            
                 }           
             }       
         }   
