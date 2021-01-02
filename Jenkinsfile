@@ -2,7 +2,8 @@ pipeline {
     agent any   
     environment {       
         registry = "itsdenty/k8scicd"       
-        GOCACHE = "/tmp"   
+        GOCACHE = "/tmp"
+        GOOGLE_APPLICATION_CREDENTIALS = "~jenkins/journal-app-1529931578045-883753fed26f.json"  
     }   
     stages {       
         stage('Build') {           
