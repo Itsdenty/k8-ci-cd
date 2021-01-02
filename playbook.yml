@@ -10,7 +10,8 @@
         definition: ""    
         kubeconfig: '~jenkins/.kube/config'  
         validate_certs: no      
-        namespace: default  
+        namespace: default 
+        src: service.yml 
    -  name: Deploy the application 
       k8s:      
         state: present      
@@ -18,3 +19,4 @@
         namespace: default 
         kubeconfig: '~jenkins/.kube/config'      
         definition: ""
+        src: deployment.yml 
