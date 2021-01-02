@@ -1,6 +1,5 @@
 - hosts: localhost
   connection: local
-  become: true
   environment:
     KUBECONFIG: /etc/rancher/k3s/k3s.yaml
     GOOGLE_APPLICATION_CREDENTIALS: ~jenkins/journal-app-1529931578045-883753fed26f.json
