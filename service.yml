@@ -3,8 +3,9 @@ kind: Service
 metadata:  
   name: hello-svc
 spec:  
-  selector:    
-    role: app  
+  selector: 
+    matchLabels:   
+      role: app  
   ports:
     - protocol: TCP
       port: 80      
