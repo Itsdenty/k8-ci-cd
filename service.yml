@@ -4,7 +4,7 @@ metadata:
   name: hello-svc
 spec:  
   selector:   
-    role: app
+    app: go-test
   ports:
     - protocol: TCP
       port: 80      
