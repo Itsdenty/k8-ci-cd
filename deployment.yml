@@ -1,7 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:  
-  name: hello-deployment  
+  name: hello-deployment
+  labels:
+    app: go-test 
 spec: 
   replicas: 2  
   selector:
