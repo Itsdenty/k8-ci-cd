@@ -9,10 +9,10 @@ labels:
   selector:
     matchLabels:      
       role: app  
-    template:    
-      metadata:      
-        labels:        
-          role: app    
+  template:    
+    metadata:      
+      labels:        
+        role: app    
   spec:      
     containers:      
       - name: app        
