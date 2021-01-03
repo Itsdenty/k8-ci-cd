@@ -7,7 +7,7 @@
    -  name: Deploy the service    
       k8s:      
         state: present      
-        definition: ""    
+        # definition: ""    
         kubeconfig: '~jenkins/.kube/config'  
         validate_certs: no      
         namespace: default 
@@ -18,5 +18,5 @@
         validate_certs: no      
         namespace: default 
         kubeconfig: '~jenkins/.kube/config'      
-        definition: ""
+        # definition: ""
         src: deployment.yml 
