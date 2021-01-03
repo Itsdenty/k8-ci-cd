@@ -13,10 +13,10 @@ labels:
     metadata:      
       labels:        
         role: app  
-  spec:      
-    containers:      
-      - name: app        
-        image: ""        
-        resources:          
-        requests:            
-        cpu: 10m
+    spec:      
+      containers:      
+        - name: app        
+          image: ""        
+          resources:          
+          requests:            
+          cpu: 10m
